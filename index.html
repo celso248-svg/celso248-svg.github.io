@@ -15,8 +15,9 @@
     <style>
         body { font-family: 'Roboto', sans-serif; background-color: #f8f9fa; }
         .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1600x900/?technology,computer') no-repeat center center/cover; color: white; padding: 150px 0; }
-        .profile-img { width: 200px; height: 200px; object-fit: cover; border: 5px solid white; }
+        .profile-img { width: 200px; height: 200px; object-fit: cover; border: 5px solid white; border-radius: 50%; }
         .section-padding { padding: 80px 0; }
+        .progress { height: 25px; margin-bottom: 15px; border-radius: 10px; }
         footer { background-color: #343a40; color: white; padding: 30px 0; }
     </style>
 </head>
@@ -29,7 +30,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="#navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
@@ -45,8 +46,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero text-center">
         <div class="container">
-            <!-- Placeholder para foto (upload foto.jpg se quiseres) -->
-            <img src="foto.jpg" alt="Foto de Celso Higino" class="rounded-circle profile-img mb-4" onerror="this.style.display='none'">
+            <img src="foto.jpg" alt="Foto de Celso Higino" class="profile-img mb-4" onerror="this.style.display='none'">
             
             <h1 class="display-4">Celso Miguel Figueira Higino</h1>
             <p class="lead">Técnico de Informática | Suporte Técnico | Helpdesk</p>
@@ -56,17 +56,214 @@
                <i class="fab fa-whatsapp"></i> WhatsApp mesmo número &nbsp;
                <i class="fas fa-map-marker-alt"></i> Seixal, Portugal</p>
             
-            <!-- Botão Download CV -->
             <a href="CV_Celso_Higino.pdf" class="btn btn-light btn-lg mt-4" download>
                 <i class="fas fa-download"></i> Descarregar CV (PDF)
             </a>
         </div>
     </section>
 
-    <!-- As outras secções mantêm-se iguais às que te enviei antes -->
-    <!-- (Sobre Mim, Experiência, Educação, Competências, Contacto, Footer) -->
+    <!-- Sobre Mim -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Sobre Mim</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p>Sou técnico de informática com mais de 15 anos de experiência em manutenção de equipamentos, suporte técnico remoto/presencial, configuração de SO (Windows, macOS, Linux), redes ADSL/Fibra, helpdesk e atendimento ao cliente.</p>
+                    <p>Destaco-me no diagnóstico hardware/software, assistência remota (TeamViewer, AnyDesk, UltraViewer), configuração de routers, serviços cloud e gestão de tickets. Sou pontual, dedicado, adaptável e com forte espírito de equipa.</p>
+                    <p>Disponível para novos desafios na área de TI em Portugal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Cola aqui o resto do código anterior (das secções About até Footer) -->
+    <!-- Experiência Profissional -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Experiência Profissional</h2>
+            <div class="accordion" id="experienceAccordion">
+                
+                <!-- Jobs recentes -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#job1">
+                            Técnico de Informática – Cybershop Almada (11/2025 – 11/2025)
+                        </button>
+                    </h2>
+                    <div id="job1" class="accordion-collapse collapse show" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Manutenção e reparação de computadores</li>
+                                <li>Acondicionamento e revenda de equipamentos recondicionados</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adicionei mais para mostrar histórico completo -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job5">
+                            Técnico de Informática – FlashPC (04/2018 – 03/2025)
+                        </button>
+                    </h2>
+                    <div id="job5" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Atendimento ao público, manutenção desktops/portáteis/PS4</li>
+                                <li>Assistência remota e instalação SO</li>
+                                <li>Deslocações técnicas e ponto pickup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job6">
+                            Linha de Apoio ao Cliente – ManpowerGroup / Worten (12/2017 – 03/2018)
+                        </button>
+                    </h2>
+                    <div id="job6" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Apoio em contact center sobre stock e encomendas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job7">
+                            Operador de Callcenter – Marktest (10/2017 – 12/2017)
+                        </button>
+                    </h2>
+                    <div id="job7" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Estudos de mercado em contact center</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job8">
+                            Operador Suporte Técnico PT – Randstad (06/2015 – 02/2016)
+                        </button>
+                    </h2>
+                    <div id="job8" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Suporte instalações/avarias ADSL/Fibra</li>
+                                <li>Configuração routers, GPON, ONT</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job9">
+                            Assistente de Relacionamento com o Cliente – Adecco (10/2010 – 12/2014)
+                        </button>
+                    </h2>
+                    <div id="job9" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Atendimento técnico empresarial</li>
+                                <li>Criação tickets Siebel e configuração equipamentos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="text-center mt-4 text-muted"><small>Experiências mais antigas e detalhes completos no CV PDF</small></p>
+        </div>
+    </section>
+
+    <!-- Educação -->
+    <section id="education" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Educação e Formação</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Curso de Manutenção e Reparação de Desktops e Portáteis</h5>
+                            <p class="text-muted">Master D, 2015–2016</p>
+                            <p>Certificação CompTIA A+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5>Técnico Profissional de Informática Nível III</h5>
+                            <p class="text-muted">IEFP Seixal, 2006–2009</p>
+                            <p>Construção websites, Office, hardware</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competências -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5">Competências</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Competências Técnicas</h5>
+                    <div class="progress"><div class="progress-bar bg-success" style="width:95%">Manutenção Hardware/Software 95%</div></div>
+                    <div class="progress"><div class="progress-bar bg-info" style="width:90%">Instalação SO (Windows/macOS/Linux) 90%</div></div>
+                    <div class="progress"><div class="progress-bar bg-warning" style="width:85%">Redes ADSL/Fibra e Routers 85%</div></div>
+                    <div class="progress"><div class="progress-bar bg-danger" style="width:90%">Assistência Remota 90%</div></div>
+                    <div class="progress"><div class="progress-bar bg-primary" style="width:80%">Cloud e Configuração Email 80%</div></div>
+                    <div class="progress"><div class="progress-bar bg-secondary" style="width:85%">Gestão Tickets (Salesforce/ServiceNow) 85%</div></div>
+                </div>
+                <div class="col-lg-6">
+                    <h5>Línguas</h5>
+                    <table class="table table-bordered">
+                        <thead><tr><th>Língua</th><th>Compreensão</th><th>Produção Oral</th><th>Leitura</th><th>Interação</th><th>Escrita</th></tr></thead>
+                        <tbody>
+                            <tr><td>Português (Materna)</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>
+                            <tr><td>Inglês</td><td>A2</td><td>A1</td><td>A1</td><td>A2</td><td>A1</td></tr>
+                            <tr><td>Francês</td><td>A1</td><td>A2</td><td>A2</td><td>A1</td><td>A1</td></tr>
+                        </tbody>
+                    </table>
+                    
+                    <h5 class="mt-4">Competências Pessoais</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Trabalho em equipa e comunicação</li>
+                        <li class="list-group-item">Pontualidade, dedicação e organização</li>
+                        <li class="list-group-item">Adaptabilidade e simpatia no atendimento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="section-padding bg-light text-center">
+        <div class="container">
+            <h2 class="mb-5">Contacto</h2>
+            <p><i class="fas fa-map-marker-alt fa-2x"></i><br>Rua Bernardo Santareno nº29 11ºB<br>2855-233 Seixal, Portugal</p>
+            <p><i class="fas fa-envelope fa-2x"></i><br><a href="mailto:celso248@gmail.com">celso248@gmail.com</a></p>
+            <p><i class="fas fa-phone fa-2x"></i><br>(+351) 969 452 871</p>
+            <p><i class="fab fa-whatsapp fa-2x"></i><br>Mesmo número para WhatsApp</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2026 Celso Higino. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
