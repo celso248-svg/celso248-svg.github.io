@@ -7,17 +7,16 @@
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome para ícones -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Google Font opcional -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
     <style>
         body { font-family: 'Roboto', sans-serif; background-color: #f8f9fa; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1600x900/?technology') no-repeat center center/cover; color: white; padding: 150px 0; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1600x900/?technology,computer') no-repeat center center/cover; color: white; padding: 150px 0; }
+        .profile-img { width: 200px; height: 200px; object-fit: cover; border: 5px solid white; }
         .section-padding { padding: 80px 0; }
-        .accordion-button { font-weight: bold; }
-        .progress { height: 25px; margin-bottom: 15px; }
         footer { background-color: #343a40; color: white; padding: 30px 0; }
     </style>
 </head>
@@ -30,7 +29,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="#navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
@@ -46,6 +45,9 @@
     <!-- Hero Section -->
     <section id="home" class="hero text-center">
         <div class="container">
+            <!-- Placeholder para foto (upload foto.jpg se quiseres) -->
+            <img src="foto.jpg" alt="Foto de Celso Higino" class="rounded-circle profile-img mb-4" onerror="this.style.display='none'">
+            
             <h1 class="display-4">Celso Miguel Figueira Higino</h1>
             <p class="lead">Técnico de Informática | Suporte Técnico | Helpdesk</p>
             <hr class="bg-white w-25 mx-auto">
@@ -53,180 +55,18 @@
                <i class="fas fa-phone"></i> (+351) 969 452 871 &nbsp;
                <i class="fab fa-whatsapp"></i> WhatsApp mesmo número &nbsp;
                <i class="fas fa-map-marker-alt"></i> Seixal, Portugal</p>
+            
+            <!-- Botão Download CV -->
+            <a href="CV_Celso_Higino.pdf" class="btn btn-light btn-lg mt-4" download>
+                <i class="fas fa-download"></i> Descarregar CV (PDF)
+            </a>
         </div>
     </section>
 
-    <!-- Sobre Mim -->
-    <section id="about" class="section-padding bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Sobre Mim</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <p>Sou técnico de informática com mais de 15 anos de experiência em manutenção de equipamentos, suporte técnico remoto e presencial, configuração de sistemas operativos (Windows, macOS, Linux), redes ADSL/Fibra e helpdesk.</p>
-                    <p>Tenho sólidos conhecimentos em diagnóstico de problemas hardware/software, assistência remota (TeamViewer, AnyDesk), configuração de routers e serviços cloud. Trabalho bem em equipa, sou pontual, dedicado e tenho vasta experiência em atendimento ao cliente e contact center.</p>
-                    <p>Estou sempre disponível para novos desafios na área de TI.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- As outras secções mantêm-se iguais às que te enviei antes -->
+    <!-- (Sobre Mim, Experiência, Educação, Competências, Contacto, Footer) -->
 
-    <!-- Experiência Profissional -->
-    <section id="experience" class="section-padding">
-        <div class="container">
-            <h2 class="text-center mb-5">Experiência Profissional</h2>
-            <div class="accordion" id="experienceAccordion">
-                
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job1">
-                            Técnico de Informática – Cybershop Almada (11/2025 – 11/2025)
-                        </button>
-                    </h2>
-                    <div id="job1" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Manutenção e reparação de computadores</li>
-                                <li>Ajuda no acondicionamento e revenda de equipamentos recondicionados</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job2">
-                            Técnico de Helpdesk – UNITEL / Universidade Europeia (10/2025 – 11/2025)
-                        </button>
-                    </h2>
-                    <div id="job2" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Tratamento de processos de alunos e matrículas</li>
-                                <li>Gestão de tickets (Salesforce e ServiceNow)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job3">
-                            Gestor de Contacto – Millennium BCP (Randstad, 04/2025 – 10/2025)
-                        </button>
-                    </h2>
-                    <div id="job3" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Resolução de dúvidas sobre aplicações móveis do banco</li>
-                                <li>Atendimento telefónico e tratamento de processos por e-mail</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job4">
-                            Técnico de Informática – FlashPC (Empresário em nome individual, 04/2018 – 03/2025)
-                        </button>
-                    </h2>
-                    <div id="job4" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Atendimento ao público e criação de documentos/currículos</li>
-                                <li>Manutenção de desktops, portáteis, PS4 e assistência remota</li>
-                                <li>Instalação e configuração de SO (Windows, macOS, Linux)</li>
-                                <li>Diagnóstico hardware/software e deslocações técnicas</li>
-                                <li>Ponto de distribuição de encomendas</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Podes adicionar os empregos mais antigos da mesma forma se quiseres -->
-                
-            </div>
-            <p class="text-center mt-4 text-muted"><small>(Experiências mais antigas disponíveis no CV completo)</small></p>
-        </div>
-    </section>
-
-    <!-- Educação -->
-    <section id="education" class="section-padding bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Educação e Formação</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Curso de Manutenção e Reparação de Desktops e Portáteis</h5>
-                            <p class="text-muted">Master D, 2015–2016</p>
-                            <p>Certificação CompTIA A+</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5>Técnico Profissional de Informática Nível III</h5>
-                            <p class="text-muted">IEFP Seixal, 2006–2009</p>
-                            <p>Incluiu construção de websites, ferramentas Office, componentes hardware, etc.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Competências -->
-    <section id="skills" class="section-padding">
-        <div class="container">
-            <h2 class="text-center mb-5">Competências</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <h5>Competências Técnicas</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Manutenção e diagnóstico hardware/software</li>
-                        <li class="list-group-item">Instalação de Windows, macOS e Linux</li>
-                        <li class="list-group-item">Assistência remota (TeamViewer, AnyDesk, UltraViewer)</li>
-                        <li class="list-group-item">Configuração de redes ADSL/Fibra e routers</li>
-                        <li class="list-group-item">Gestão de tickets (Salesforce, ServiceNow)</li>
-                        <li class="list-group-item">Conhecimentos em cloud computing e configuração de e-mail</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <h5>Línguas</h5>
-                    <strong>Português:</strong> Língua materna<br>
-                    <strong>Inglês:</strong> A1–A2 (básico)<br>
-                    <strong>Francês:</strong> A1–A2 (básico)
-                    
-                    <h5 class="mt-4">Competências Pessoais</h5>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Trabalho em equipa e boa comunicação</li>
-                        <li class="list-group-item">Pontualidade e dedicação</li>
-                        <li class="list-group-item">Adaptabilidade e simpatia no atendimento</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contact" class="section-padding bg-light text-center">
-        <div class="container">
-            <h2 class="mb-5">Contacto</h2>
-            <p><i class="fas fa-map-marker-alt fa-2x"></i><br>Rua Bernardo Santareno nº29 11ºB<br>2855-233 Seixal, Portugal</p>
-            <p><i class="fas fa-envelope fa-2x"></i><br><a href="mailto:celso248@gmail.com">celso248@gmail.com</a></p>
-            <p><i class="fas fa-phone fa-2x"></i><br>(+351) 969 452 871</p>
-            <p><i class="fab fa-whatsapp fa-2x"></i><br>Mesmo número para WhatsApp</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="container">
-            <p>&copy; 2026 Celso Higino. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    <!-- Cola aqui o resto do código anterior (das secções About até Footer) -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
